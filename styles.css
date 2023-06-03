@@ -10,10 +10,21 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  height: 100svh;
   background: linear-gradient(90deg, #395492, #0099c0, #3dd5a8);
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 428px) {
+  body {
+    height: 100vh;
+  }
 }
 
 .grid {
